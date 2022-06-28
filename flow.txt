@@ -1,0 +1,5 @@
+1-The instructios asked to run the installed app and to push it to gitHub
+ without any changes but I had to install tha latest version of express 
+ and react-scripts( npm install react-scripts --save ) manually because
+  they didn't come with npm install.
+

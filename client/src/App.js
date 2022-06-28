@@ -7,6 +7,10 @@ import Form from './components/Form/Form';
 import { getPosts } from './actions/posts';
 import useStyles from './styles';
 import memories from './images/bank.png';
+//My components
+import FilterBoard from './components/FilterClients/FilterBoard';
+import OptionsForm from './components/FilterClients/OptionsForm';
+
 
 const App = () => {
   const [currentId, setCurrentId] = useState(0);
@@ -20,9 +24,14 @@ const App = () => {
   return (
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
+        
         <Typography className={classes.heading} variant="h2" align="center">Bank Clients</Typography>
         <img className={classes.image} src={memories} alt="icon" height="60" />
       </AppBar>
+      
+      
+      <OptionsForm />
+      
       <Grow in>
         <Container>
           <Grid container justify="space-between" alignItems="stretch" spacing={3}>
